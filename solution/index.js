@@ -85,7 +85,7 @@ app.post('/books/search', (req, res) => {
 	let query = req.body.query || "";
 	if (query.length > 0 && user) {
 		res.render('library', makeLibraryPageState({
-			books: books.filter(function(book) {
+			books: books.filter((book) => {
 				return book.title.indexOf(query) !== -1 ||
 					   book.author.indexOf(query) !== -1 ||
 					   book.isbn.indexOf(query) !== -1;

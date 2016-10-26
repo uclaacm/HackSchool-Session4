@@ -4,6 +4,10 @@
  * All code that you write will be right here:
  */
 
+// define global variables
+let books = [];     // an array of objects with properties {title, author, isbn, copies}
+let user = null;    // the name of the user that is logged in
+
 
 
 //////////////////////////////////////////////////////
